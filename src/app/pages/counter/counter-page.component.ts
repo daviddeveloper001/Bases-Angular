@@ -10,11 +10,11 @@ export class CounterPageComponent {
     counter = 15;
     counterSignal = signal(10);
 
-    constructor(){
-      setInterval(() => {
-        this.counterSignal.update((v) => v + 1);
-        console.log('tick');
-      }, 2000)
+    constructor() {
+        setInterval(() => {
+            this.counterSignal.update((v) => v + 1);
+            console.log('tick');
+        }, 2000);
     }
 
     increaseBy(value: number): void {
